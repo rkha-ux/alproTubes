@@ -434,7 +434,7 @@ func sortSalary() {
 				i, xy[i].skill, xy[i].interest, xy[i].industry, xy[i].avgsalary)
 		}
 	}
-	if !foundAnySalaryEntry {
+	if !foundSalary {
 		fmt.Println("No salary data entries to display.")
 	}
 }
