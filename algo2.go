@@ -285,7 +285,7 @@ func compatibility() {
 	fmt.Print("Input your interest (e.g., GameDeveloping, DataAnalyzing): ")
 	fmt.Scan(&userInterestInput)
 
-	fmt.Print("Input your desired industry (e.g., Backend_Developer, Data_Analyst): ") // Updated example
+	fmt.Print("Input your desired industry (e.g., Backend_Developer, Data_Analyst): ") 
 	fmt.Scan(&userIndustryInput)
 
 	foundAnyMatch := false
@@ -426,10 +426,10 @@ func sortSalary() {
 	}
 
 	fmt.Println("Sorted by average salary (low to high):")
-	foundAnySalaryEntry := false
+	foundSalary := false
 	for i := 1; i < nmax; i++ {
 		if !(xy[i].skill == "" && xy[i].interest == "" && xy[i].industry == "") {
-			foundAnySalaryEntry = true
+			foundSalary = true
 			fmt.Printf("%d. Skill: %s, Interest: %s, Industry: %s, Salary: %d\n",
 				i, xy[i].skill, xy[i].interest, xy[i].industry, xy[i].avgsalary)
 		}
